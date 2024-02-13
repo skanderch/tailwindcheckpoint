@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-gray-800 py-6">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-white font-bold text-xl">Your Name</h1>
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#" class="text-white">Home</a>
+                    <a href="#" class="text-white">Projects</a>
+                    <a href="#" class="text-white">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen" style="background-image: url('https://source.unsplash.com/random');">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center h-full">
+                <div class="text-center">
+                    <h2 class="text-white text-4xl font-bold mb-4">Welcome to my portfolio</h2>
+                    <p class="text-white">Here you can find information about my skills, projects, and how to contact me.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-4">My Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Repeat this div for each skill -->
+                <div class="bg-white p-4 rounded shadow">
+                    <h4 class="text-xl font-bold mb-2">Skill Name</h4>
+                    <p class="text-gray-600">Skill description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-4">My Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Repeat this div for each project -->
+                <div class="bg-white p-4 rounded shadow">
+                    <img src="/assets/téléchargement.png" alt="Project Image" class="w-full h-48 object-cover mb-4 rounded">
+                    <h4 class="text-xl font-bold mb-2">Project Title</h4>
+                    <p class="text-gray-600">Project description</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="bg-gray-800 py-8">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold mb-4 text-white">Contact Me</h3>
+            <form class="w-full max-w-lg mx-auto">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <label class="block uppercase text-gray-200 text-xs font-bold mb-2" for="name">Name</label>
+                        <input class="border-gray-300 rounded px-3 py-2 mb-4" type="text" placeholder="Your Name" id="name">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <label class="block uppercase text-gray-200 text-xs font-bold mb-2" for="email">Email</label>
+                        <input class="border-gray-300 rounded px-3 py-2 mb-4" type="email" placeholder="Your Email" id="email">
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <label class="block uppercase text-gray-200 text-xs font-bold mb-2" for="message">Message</label>
+                    <textarea class="border-gray-300 rounded px-3 py-2 mb-4" placeholder="Your Message" id="message"></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Send</button>
+                </div>
+            </form>
+            <!-- Footer -->
+<footer class="bg-gray-800 py-12">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center justify-between">
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h2 class="text-white text-2xl font-bold mb-4">Your Name</h2>
+                <p class="text-gray-400">
+                    Your address, city, state, zip
+                </p>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h3 class="text-white text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Projects</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h3 class="text-white text-xl font-bold mb-4">Follow Me</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Twitter</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">LinkedIn</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/4 text-center md:text-left">
+                <h3 class="text-white text-xl font-bold mb-4">Legal</h3>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 py-6">
+        <div class="border-t border-gray-700"></div>
+    </div>
+    <div class="container mx-auto px-4 py-2 text-center text-gray-400">
+        &copy; 2023 Your Name. All rights reserved.
+    </div>
+</footer>
